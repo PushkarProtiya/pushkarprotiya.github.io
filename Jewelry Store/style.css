@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#banner{
+    background-image: url(assets/images/background/jess-harper-sunday-bLkj9eNhW90-unsplash.jpg);
+    width: 100%;
+    height: 76vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#cont-1{
+    padding-top: 11.5rem;
+}
+.box{
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+}
+/* .box-2{
+    overflow: hidden;
+} */
+.box-2 #img-1:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.box-3 #img-2:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.box-4 #img-3:hover{
+    transition: 0.4s;
+    filter: brightness(0.5);
+}
+/* media quires */
+
+@media screen and (max-width: 414px){
+    #hide #img-4{
+        display: none;
+    }
+}

@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#nav{
+    position: sticky;
+    top: 0;
+}
+#button{
+    color: white;
+    background-color: black;
+    padding: 1.2rem;
+    border: none;
+}
+#button:hover{
+    background-color: #B68E52;
+    transition: 0.8s;
+}
+#first:hover{
+    filter: brightness(0.5);
+    transition: 0.4s;
+}
+#btn{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1000;
+    border: none;
+    background: none;
+}
+#btn i{
+    font-size: 2.5rem;
+    color: #B68E52;
+}
+#btn:hover{
+    transition: 0.4s;
+}
+#work img:hover{
+    filter: drop-shadow(2px 4px 6px grey);   
+}
