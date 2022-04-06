@@ -45,6 +45,12 @@
 
 <body>
 
+    <!-- preloader -->
+
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+
     <!-- nav-section -->
 
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1b1b1b;">
@@ -279,6 +285,15 @@
                 $('html,body').animate({ scrollTop: 0 }, 200);
                 return false;
             })
+        })
+
+        // <!-- preloader script -->
+
+
+        $(window).on('load', function () { // makes sure the whole site is loaded 
+            $('#status').delay(10000).fadeOut('slow'); // will first fade out the loading animation 
+            $('#preloader').delay(1200).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(1200).css({ 'overflow': 'visible' });
         })
     </script>
 
